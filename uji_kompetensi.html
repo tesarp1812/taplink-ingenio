@@ -1,109 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ingenio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
 
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(25deg, #ee8402, #f8ca2b);
+        background-size: 300% 300%;
+        animation: color 12s ease-in-out infinite;
+
+        /* f8ca2b */
+      }
+
+      @keyframes color {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .tombol {
+        background-color: rgb(239, 230, 207);
+        color: #3b3b3b;
+        text-decoration: none;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+      }
+    </style>
 
     <!-- Bootstrap CSS datatable -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
 
     <!-- DataTables Buttons CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.1.0/css/buttons.dataTables.min.css"
+    />
 
     <!-- {{-- boostraps icon cdn --}} -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-   
-</head>
-
-<body>
-
-    <div class="mb-4" style="text-align: center;">
-        <img src="/karakter.png" style="width: 400px; height: auto; margin-top: 10px;"
-            alt="Logo Perusahaan ">
-    </div>
-    
-    <div class="mb-4" style="text-align: center;">
-        <h1>FORMULIR LAYANAN UJIAN KOMPETENSI</h1>
-        
-    </div>
-    
-    
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1UqAucKEOgF9DcI67Pz7pCrotiiQJCgwjrpGp4C2HPZ8yTA/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR PENGUNDURAN JADWAL BIMBINGAN UJIAN KOMPETENSI</h6>
-        </a>
+  <body>
+    <div class="mb-4" style="text-align: center">
+      <img
+        src="/karakter.png"
+        style="width: 400px; height: auto; margin-top: 10px"
+        alt="Logo Perusahaan "
+      />
     </div>
 
-    
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjGn7-LccVD5jqd7dBEwPciJ0T1s-nHY5UaZKP46MrUcEMCw/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR REGISTRASI BUKU BIMBINGAN UKMPPD INGENIO INDONESIA</h6>
-        </a>
-    </div>
-    
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfA6yFmi6_pYMxQC_9tjXSRQWDuWlCP4dcMHpKfEsx5jQNNyw/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR RESCHEDULE KELOMPOK BIMBINGAN UJIAN KOMPETENSI INGENIO INDONESIA</h6>
-        </a>
+    <div class="mb-4" style="text-align: center">
+      <h1>FORMULIR LAYANAN UJIAN KOMPETENSI</h1>
     </div>
 
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZiqHvzplXficU-eLNUlVAhg_CTi69kKcwzn6ZpfR1wsQjhw/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR RESCHEDULE BIMBINGAN PESERTA UJIAN KOMPETENSI INGENIO INDONESIA</h6>
-        </a>
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf1UqAucKEOgF9DcI67Pz7pCrotiiQJCgwjrpGp4C2HPZ8yTA/viewform"
+        class="btn tombol"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>FORMULIR PENGUNDURAN JADWAL BIMBINGAN UJIAN KOMPETENSI</h6>
+      </a>
     </div>
 
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUneFt7psVaCY1ichTn3kg28fdzjv7IWXeG-I4gg2glJmFlg/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR EVALUASI BIMBINGAN UKMPPD INGENIO INDONESIA</h6>
-        </a>
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdjGn7-LccVD5jqd7dBEwPciJ0T1s-nHY5UaZKP46MrUcEMCw/viewform"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>FORMULIR REGISTRASI BUKU BIMBINGAN UKMPPD INGENIO INDONESIA</h6>
+      </a>
     </div>
 
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv8J-GpNXiTgdo5KvbeJwWEGQlR6ll-iS6cO5X3F3q8PtRnQ/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR EVALUASI BIMBINGAN UKOM KEBIDANAN INGENIO INDONESIA</h6>
-        </a>
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfA6yFmi6_pYMxQC_9tjXSRQWDuWlCP4dcMHpKfEsx5jQNNyw/viewform"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>
+          FORMULIR RESCHEDULE KELOMPOK BIMBINGAN UJIAN KOMPETENSI INGENIO
+          INDONESIA
+        </h6>
+      </a>
     </div>
 
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJEgLPqXglgqGstbUivbXGT2rS9DZ2JK_dLeTNVLqP_r1g3g/viewform"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6>FORMULIR HASIL SWAB COVID DAN VAKSIN COVID</h6>
-        </a>
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfZiqHvzplXficU-eLNUlVAhg_CTi69kKcwzn6ZpfR1wsQjhw/viewform"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>
+          FORMULIR RESCHEDULE BIMBINGAN PESERTA UJIAN KOMPETENSI INGENIO
+          INDONESIA
+        </h6>
+      </a>
     </div>
 
-    <div class="mb-2" style="text-align: center;">
-        <a href="https://api.whatsapp.com/send/?phone=6281358889123&text&type=phone_number&app_absent=0"
-            class="btn btn-primary"
-            style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
-            <h6><i class="bi bi-whatsapp"> KELUHAN DAN KENDALA</i></h6>
-        </a>
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdUneFt7psVaCY1ichTn3kg28fdzjv7IWXeG-I4gg2glJmFlg/viewform"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>FORMULIR EVALUASI BIMBINGAN UKMPPD INGENIO INDONESIA</h6>
+      </a>
     </div>
 
-    
-    
-     
-</body>
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdv8J-GpNXiTgdo5KvbeJwWEGQlR6ll-iS6cO5X3F3q8PtRnQ/viewform"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>FORMULIR EVALUASI BIMBINGAN UKOM KEBIDANAN INGENIO INDONESIA</h6>
+      </a>
+    </div>
 
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfJEgLPqXglgqGstbUivbXGT2rS9DZ2JK_dLeTNVLqP_r1g3g/viewform"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6>FORMULIR HASIL SWAB COVID DAN VAKSIN COVID</h6>
+      </a>
+    </div>
+
+    <div class="mb-2" style="text-align: center">
+      <a
+        href="https://api.whatsapp.com/send/?phone=6281358889123&text&type=phone_number&app_absent=0"
+        class="btn btn-primary"
+        style="
+          width: 65%;
+          box-sizing: border-box;
+          margin: 0 0 20px 0;
+          padding: 10px;
+        "
+      >
+        <h6><i class="bi bi-whatsapp"> KELUHAN DAN KENDALA</i></h6>
+      </a>
+    </div>
+  </body>
 </html>
