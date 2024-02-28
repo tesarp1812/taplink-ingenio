@@ -21,18 +21,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
-            background: linear-gradient(6deg, #ee8402, #f8ca2b, #ee8402, #f8ca2b);
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(25deg, #ee8402, #f8ca2b);
+            background-size: 300% 300% ;
+            animation: color 12s ease-in-out infinite;
+            
             /* f8ca2b */
         }
 
-        .tombol {
-            background-color: #3b3b3b;
-            color: aliceblue;
+        @keyframes color {
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
         }
 
-        .tombol2 {
-            background-color: rgb(237, 238, 239);
+        .tombol {
+            background-color: rgb(239, 230, 207);
             color: #3b3b3b;
+            text-decoration: none;
         }
     </style>
     <!-- font montserat, judul bold  -->
@@ -47,7 +60,7 @@
     </div>
     
     <div class="mb-4" style="text-align: center;">
-        <h1>Ingenio Indonesia</h1>
+        <h1><b>Ingenio Indonesia</b></h1>
         <p>Halo kakak-kakak Tutor Ingenio Indonesia! <br>
             ‌Berikut halaman tautan integrasi untuk seluruh proses layanan akademik Ingenio Indonesia! <br>
             Tautan ini terbatas untuk tutor Ingenio Indonesia. <br>
@@ -63,7 +76,7 @@
     
     <div class="mb-2" style="text-align: center;">
         <a href="https://drive.google.com/file/d/1ZVzaHbeqSbJ9BF9YdYfppl0Nj5HRYYSy/view"
-            class="btn tombol2"
+            class="btn tombol"
             style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
             <h5>FAQ BIMBINGAN UKMPPD INGENIO INDONESIA</h5>
             <p>Silakan Dibaca Untuk Pertanyaan yang Sering Ditanyakan Oleh Peserta Bimbingan UKMPPD</p>
@@ -93,7 +106,7 @@
     
     <div class="mb-2" style="text-align: center;">
         <a href="/uji_kompetensi.html"
-            class="btn btn-primary"
+            class="btn tombol"
             style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
             <h5>FORMULIR LAYANAN UJIAN KOMPETENSI</h5>
             <p>UKMPPD/UKMP2DG/UKOM KEBIDANAN</p>
@@ -102,7 +115,7 @@
 
     <div class="mb-2" style="text-align: center;">
         <a href="/layanan_preklinik.html"
-            class="btn btn-primary"
+            class="btn tombol"
             style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
             <h5>FORMULIR LAYANAN PREKLINIK</h5>
             <p>PREKLINIK KEDOKTERAN UMUM, PREKLINIK KEDOKTERAN, PREKLINIK KEBIDANAN, DOKTER MUDA, DOKTER MUDA GIGI, PROFESI BIDAN</p>
@@ -117,7 +130,7 @@
     
     <div class="mb-2" style="text-align: center;">
         <a href="https://drive.google.com/file/d/1LAzHhfTirsqc6DKqf6QIeQ00ERQ8A1cM/view"
-            class="btn btn-primary"
+            class="btn tombol"
             style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
             <h5>PANDUAN PELAKSANAAN TRY OUT INGENIO INDONESIA</h5>
             <p>Menu ini ditujukan untuk pelaksanaan Try Out Bimbingan CBT Ingenio Indonesia</p>
@@ -132,7 +145,7 @@
     
     <div class="mb-2" style="text-align: center;">
         <a href=""
-            class="btn btn-primary"
+            class="btn tombol"
             style="width: 65%; box-sizing: border-box; margin: 0 0 20px 0; padding: 10px; ">
             <h5><i class="bi bi-whatsapp"> KELUHAN DAN KENDALA</i> </h5>
         </a>
